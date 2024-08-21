@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculateExchangeFragment">
+
+    <Spinner
+        android:id="@+id/calculateExchangeFromSpinner"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/calculateExchangeToSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/calculateExchangeLabelFromTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/calculateExchangeLabelFromTextView"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="@string/calculate_exchange_label_from_text"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/calculateExchangeLabelToTextView"
+        app:layout_constraintEnd_toStartOf="@+id/calculateExchangeFromSpinner"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Spinner
+        android:id="@+id/calculateExchangeToSpinner"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/calculateExchangeLabelToTextView"
+        app:layout_constraintTop_toBottomOf="@+id/calculateExchangeFromSpinner" />
+
+    <TextView
+        android:id="@+id/calculateExchangeLabelToTextView"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="250dp"
+        android:gravity="center"
+        android:text="@string/calculate_exchange_label_to_text"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/calculateExchangeToSpinner"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculateExchangeLabelFromTextView" />
+
+    <TextView
+        android:id="@+id/calculateExchangeDisplayTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/calculateExchangeAmountEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.83" />
+
+    <EditText
+        android:id="@+id/calculateExchangeAmountEditText"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:hint="@string/calculate_exchange_amount_edit_text_hint"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/calculateExchangeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/calculateExchangeButton"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="95dp"
+        android:text="@string/calculate_exchange_button_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Simple Bank Manager</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_username_hint">username</string>
+    <string name="login_password_hint">password</string>
+    <string name="login_button_text">log in</string>
+    <string name="user_menu_welcome_text">Welcome %s</string>
+    <string name="user_menu_view_balance_button_text">view balance</string>
+    <string name="user_menu_transfer_funds_button_text">transfer funds</string>
+    <string name="user_menu_exchange_calculator_button_text">calculate exchange</string>
+    <string name="user_menu_pay_bills_button_text">pay bills</string>
+    <string name="view_balance_label_text">Balance:</string>
+    <string name="view_balance_amount_text">$%.2f</string>
+    <string name="transfer_funds_account_edit_text_hint">Account number</string>
+    <string name="transfer_funds_amount_edit_text_hint">Enter amount</string>
+    <string name="transfer_funds_button_text">transfer</string>
+    <string name="transfer_failed_not_enough_money">Not enough funds to transfer $%.2f</string>
+    <string name="transfer_successful">Transferred $%.2f to account %s</string>
+    <string name="calculate_exchange_label_from_text">convert from</string>
+    <string name="calculate_exchange_label_to_text">convert to</string>
+    <string name="calculate_exchange_amount_edit_text_hint">Enter amount</string>
+    <string name="calculate_exchange_button_text">Calculate</string>
+    <string name="currency_exchange_result">%s%.2f = %s%.2f</string>
+    <string name="pay_bills_code_input_edit_text_hint">Enter code</string>
+    <string name="pay_bills_show_bill_info_button_text">Show bill info</string>
+    <string name="bill_pay_confirm_dialog_message">Name: %s\nBillCode: %s\nAmount: $%.2f</string>
+    <string name="confirm">Confirm</string>
+</resources>
